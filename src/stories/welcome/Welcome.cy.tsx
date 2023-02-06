@@ -5,7 +5,7 @@ describe('Welcome', () => {
     cy.mount(
       <Welcome username="Test User" onLogout={cy.spy().as('onLogout')} />
     );
-    cy.contains('Welcome Test User!'); 
+    cy.contains('Welcome Test User!');  
   });
 
   it('when the log out button is clicked, onLogout should be called', () => {
