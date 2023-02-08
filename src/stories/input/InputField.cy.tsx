@@ -1,6 +1,8 @@
 import InputField from '../input/InputField';
 
 describe('InputField', () => { 
+
+  //Verifica se o nome do input é Name
   it('should mount with label', () => {
     cy.mount(
       <InputField
@@ -13,6 +15,7 @@ describe('InputField', () => {
     cy.get('label').contains('Name');
   });
 
+//Verifica se exibe a mensagem de alerta Name is required
   it('when there is no value and form is submitted, should show a required message', () => {
     cy.mount(
       <InputField

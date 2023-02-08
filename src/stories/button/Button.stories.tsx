@@ -6,11 +6,6 @@ import Button from './Button';
 export default {
   title: 'Button',
   component: Button,
-  parameters:{
-    controls:{
-        exclude:/.*/g
-    }
-  },
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },

@@ -1,20 +1,28 @@
+import Button from "../button/Button";
 import { Header } from "./Header";
+import React, { useState } from 'react';
+
+type User = {
+  name: string;
+};
+
+// const [user, setUser] = React.useState<User>();
 
 
-describe('Header', () => {
-  it('should mount', () => {
-    cy.mount(<Header onLogin={
-      function (): void {
+  describe('Header', () => {
 
-    
-
-      throw new Error("Function not implemented.");
-    } } onLogout={function (): void {
-      throw new Error("Function not implemented.");
-    } } onCreateAccount={function (): void {
-      throw new Error("Function not implemented.");
-    } }></Header>);
-
+    //Implementar: clicar no botão do header e mudar o texto para Logado
+    it('should mount', () => {
+            
+      // cy.mount(<Header
+      //   user={user}
+      //   onLogin={() => setUser({ name: 'Jane Doe' })}
+      //   onLogout={() => setUser(undefined)}
+      //   onCreateAccount={() => setUser({ name: 'Jane Doe' })}
+      //   /> )
+      //   cy.contains('Welcome, Jane Doe!');
+      //   cy.get('.storybook-button').click();
+        
+    });
+  
   });
-
-});

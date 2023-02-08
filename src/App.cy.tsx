@@ -1,6 +1,8 @@
 import App from "./App";
 
 describe('LoginForm', () => {
+
+  //deve redirecionar para a tela de boas-vindas quando os créditos estiverem corretos
   it('should redirect to welcome screen when creds are correct', () => {
     cy.mount(<App />);
     cy.contains('Username').find('input').type('testuser');
@@ -15,6 +17,7 @@ describe('LoginForm', () => {
     cy.contains('Welcome testuser!');
   });
 
+  //deve mostrar mensagem de erro quando os créditos estão incorretos
   it('should show error message when creds are incorrect', () => {
     cy.mount(<App />);
     cy.contains('Username').find('input').type('baduser');
