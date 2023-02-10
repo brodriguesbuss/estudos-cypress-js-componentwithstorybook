@@ -1,0 +1,13 @@
+/* Header.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .header__title {
+    margin: 0;
+  }

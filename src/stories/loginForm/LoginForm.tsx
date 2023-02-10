@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Buttontwo from '../button--two/Buttontwo';
-import Button from '../button/Button';
+import ButtonSquare from '../buttonSquare/ButtonSquare';
+import Buttontwo from '../buttonSquare/ButtonSquare';
 import InputField from '../input/InputField';
 import './loginForm.css';
 
@@ -57,7 +57,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin, title = 'Log In', errorM
             value={password}
             autoComplete="current-password"
           />
-          <Buttontwo type="submit">Login</Buttontwo>
+          <ButtonSquare backgroundColor='blue' type="submit">Login</ButtonSquare>
       
 
           {errorMessage && (

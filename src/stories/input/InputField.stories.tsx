@@ -9,7 +9,7 @@ export default {
   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
   * to learn how to generate automatic titles
   */
-  title: 'Input',
+  title: 'InputField',
   component: InputField,
 } as ComponentMeta<typeof InputField>;
 
@@ -17,7 +17,7 @@ const Template: ComponentStory<typeof InputField> = (args) => <InputField {...ar
 
 export const Filled = Template.bind({});
 Filled.args = {
-  name: 'User Naminho',
+  name: 'User Name',
   label: 'Name',
   requiredMessage: 'Name is required',
   submitted: false,

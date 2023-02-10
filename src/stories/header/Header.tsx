@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../button/Button';
+import { ButtonRound } from '../buttonRound/ButtonRound';
 import './header.css';
 
 type User = {
@@ -41,12 +41,12 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
             <span className="welcome">
               Welcome, <b>Jane Doe</b>!
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
+            <ButtonRound size="small" onClick={onLogout} children="Log out"/>
           </>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <ButtonRound size="small" onClick={onLogin} children="Log in" />
+            <ButtonRound primary size="small" onClick={onCreateAccount} children="Sign up" />
           </>
         )}
       </div>

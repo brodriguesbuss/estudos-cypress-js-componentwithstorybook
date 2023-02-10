@@ -11,23 +11,17 @@ export default {
   * to learn how to generate automatic titles
   */
   title: 'LoginForm',
-  
   component: LoginForm
 } as ComponentMeta<typeof LoginForm>;
 
 const Template: ComponentStory<typeof LoginForm> = (args) => <LoginForm {...args} />;
 
-export const Filled = Template.bind({});
-Filled.play = async ({ canvasElement }) => {
+export const Empty = Template.bind({});
+Empty.play = async ({ canvasElement }) => {
 const canvas = within(canvasElement);  
   const loginButton = await canvas.getByRole('button', { name: /Log in/i });
   await userEvent.click(loginButton);
 }
-
-
-  //Caso queira mapear o click()
-  // const loginButton = await canvas.getByRole('button', { name: /Log in/i });
-  // await userEvent.click(loginButton);
 
 
 
