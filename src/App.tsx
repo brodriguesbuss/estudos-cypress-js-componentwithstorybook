@@ -2,6 +2,7 @@ import { useState } from 'react';
 import LoginForm from '../src/stories/loginForm/LoginForm';
 import Welcome from '../src/stories/welcome/Welcome';
 
+
 function App() {
   const [isAuthed, setIsAuthed] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -33,18 +34,28 @@ function App() {
 
   return (
     <div className="lg:container lg mx-auto m-10">
+         
       {isAuthed ? (
-        <Welcome
+        <><Welcome
           username={username}
           onLogout={() => {
             setIsAuthed(false);
             setUsername('');
-          }}
-        />
+          } } />
+
+               
+
+          
+          </>
       ) : (
         <LoginForm onLogin={handleLogin} errorMessage={errorMessage} />
+        
       )}
+          
+        
     </div>
+    
+    
   );
 }
 
