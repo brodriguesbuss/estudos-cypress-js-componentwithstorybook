@@ -1,4 +1,4 @@
-# Repositório de Estudos: Testes Automatizados de Componentes com Cypress e Storybook
+# Repositório de Estudos: Testes Automatizados de Componentes com Cypress e Storybook (versao 2)
 
 Bem-vindo ao meu repositório de estudos! Aqui estou aprofundando meus conhecimentos em testes automatizados de componentes usando Cypress, em conjunto com a utilização de componentes pelo Storybook.
 
